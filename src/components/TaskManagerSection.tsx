@@ -248,10 +248,10 @@ export default function TaskManagerSection() {
               <div className="flex items-center space-x-2">
                 {/* Filter Dropdown */}
                 <div className="relative">
-                  <button className="flex items-center space-x-1 text-sm font-medium py-1 px-2 rounded-md hover:bg-secondary/80 transition-all">
+                  {/* <button className="flex items-center space-x-1 text-sm font-medium py-1 px-2 rounded-md hover:bg-secondary/80 transition-all">
                     <Filter className="w-4 h-4" />
                     <span>Filter</span>
-                  </button>
+                  </button> */}
                   <div className="absolute right-0 top-full mt-1 bg-background border border-border rounded-lg shadow-subtle p-1 hidden">
                     <button className="block w-full text-left px-3 py-1 text-sm rounded-md hover:bg-secondary/80 transition-all">
                       All Tasks

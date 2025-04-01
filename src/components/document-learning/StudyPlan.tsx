@@ -72,19 +72,19 @@ export default function StudyPlan({ studyPlan, setStudyPlan, isProcessing }: Stu
                 <span>Estimated time: 30 mins</span>
               </div>
               
-              <button className="text-primary flex items-center space-x-1">
+              {/* <button className="text-primary flex items-center space-x-1">
                 <span>Start learning</span>
                 <ExternalLink className="w-3 h-3" />
-              </button>
+              </button> */}
             </div>
           </div>
         ))}
       </div>
       
-      <button className="mt-4 w-full py-2 border border-dashed border-border/70 rounded-lg text-sm text-muted-foreground hover:bg-secondary/50 transition-all flex items-center justify-center space-x-2">
+      {/* <button className="mt-4 w-full py-2 border border-dashed border-border/70 rounded-lg text-sm text-muted-foreground hover:bg-secondary/50 transition-all flex items-center justify-center space-x-2">
         <Plus className="w-4 h-4" />
         <span>Add Custom Study Session</span>
-      </button>
+      </button> */}
     </>
   );
 }
