@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -13,6 +13,7 @@ export default function SignUp() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const { signUp, signInWithGoogle, loading } = useAuth();
+  const navigate = useNavigate(); // Added navigation hook
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -30,6 +31,8 @@ export default function SignUp() {
 
     try {
       await signUp(email, password, name);
+      // Manually redirect to Sign In page after sign up
+      navigate("/signin");
     } catch (error: any) {
       setError(error.message || "An error occurred during sign up");
     }
